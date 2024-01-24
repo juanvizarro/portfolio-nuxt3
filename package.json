@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "devDependencies": {
+    "@formkit/auto-animate": "^0.8.1",
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.1.0",
+    "@nuxt/ui": "^2.11.1",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/google-fonts": "^3.1.1",
+    "@nuxtjs/i18n": "^8.0.0-rc.11",
+    "@pinia/nuxt": "^0.5.1",
+    "@typescript-eslint/parser": "^6.15.0",
+    "dayjs-nuxt": "^2.1.9",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "nuxt": "^3.8.2",
+    "nuxt-phosphor-icons": "^1.0.8",
+    "nuxt-vitest": "^0.11.5",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.0",
+    "vue": "^3.3.13",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.25"
+  },
+  "dependencies": {
+    "@iconify-json/ph": "^1.1.9",
+    "@vueuse/nuxt": "^10.7.0"
+  }
+}
