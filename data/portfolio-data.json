@@ -1,0 +1,237 @@
+{
+    "translation": {
+      "en": {
+      "speciality": "Frontend Developer",
+      "description": "desarrollador frontend con 4 años de experiencia"
+      },
+      "es": {
+        "speciality": "Desarrollador Frontend",
+        "description": "Apasionado desarrollador frontend con un enfoque creativo y orientado a resultados. Con una sólida comprensión de las últimas tecnologías y tendencias en el mundo del desarrollo web."
+      }
+    },
+    "full_name": "Juan Vizarro Ramos",
+    "skills": [
+      {
+        "logo": "/icons/skills/vue.svg",
+        "type": "frontend",
+        "title": "Vue.js",
+        "years": 5,
+        "color": "#22c55e"
+      },
+      {
+        "logo": "/icons/skills/javascript-1.svg",
+        "type": "frontend",
+        "title": "Javascript",
+        "years": 5,
+        "color": "#eab308"
+      },
+      {
+        "logo": "/icons/skills/typescript.svg",
+        "type": "frontend",
+        "title": "Typescript",
+        "years": 3,
+        "color": "#027acb"
+      },
+      {
+        "logo": "/icons/skills/nuxt.svg",
+        "type": "frontend",
+        "title": "Nuxt",
+        "years": 2,
+        "color": "#22c55e"
+      },
+      {
+        "logo": "/icons/skills/vitejs.svg",
+        "type": "frontend",
+        "title": "Vite",
+        "years": 3,
+        "color": "#f7ca3a"
+      },
+      {
+        "logo": "/icons/skills/tailwindcss.svg",
+        "type": "frontend",
+        "title": "Tailwindcss",
+        "years": 1,
+        "color": "#0ea5e9"
+      },
+      {
+        "logo": "/icons/skills/bootstrap-5-1.svg",
+        "type": "frontend",
+        "title": "Bootstrap",
+        "years": 2,
+        "color": "#7952b3"
+      },
+      {
+        "logo": "/icons/skills/sass.svg",
+        "type": "frontend",
+        "title": "Sass",
+        "years": 3,
+        "color": "#CF649A"
+      },
+      {
+        "logo": "/icons/skills/css-3.svg",
+        "type": "frontend",
+        "title": "CSS",
+        "years": 5,
+        "color": "#1c88c7"
+      },
+      {
+        "logo": "/icons/skills/html.svg",
+        "type": "frontend",
+        "title": "HTML",
+        "years": 5,
+        "color": "#e34f26"
+      },
+      {
+        "logo": "/icons/skills/flutter.svg",
+        "type": "mobile",
+        "title": "Flutter",
+        "years": 1,
+        "color": "#4aa4ee"
+      },
+      {
+        "logo": "/icons/skills/php.svg",
+        "type": "backend",
+        "title": "PHP",
+        "years": 2,
+        "color": "#8993BE"
+      },
+      {
+        "logo": "/icons/skills/laravel.svg",
+        "type": "backend",
+        "title": "Laravel",
+        "years": 1,
+        "color": "#e5413c"
+      },
+      {
+        "logo": "/icons/skills/nodejs.svg",
+        "type": "backend",
+        "title": "Node.js",
+        "years": 1,
+        "color": "#8dc74c"
+      },
+      {
+        "logo": "/icons/skills/postgresql.svg",
+        "type": "bd",
+        "title": "PostgreSQL",
+        "years": 1,
+        "color": "#3a6994"
+      },
+      {
+        "logo": "/icons/skills/mysql-6.svg",
+        "type": "bd",
+        "title": "MySQL",
+        "years": 2,
+        "color": "#0f5970"
+      },
+      {
+        "logo": "/icons/skills/git.svg",
+        "type": "other",
+        "title": "Git",
+        "years": 4,
+        "color": "#DE4C36"
+      },
+      {
+        "logo": "/icons/skills/github.svg",
+        "type": "other",
+        "title": "GitHub",
+        "years": 4,
+        "color": "#6e40c9"
+      },
+      {
+        "logo": "/icons/skills/gitlab.svg",
+        "type": "other",
+        "title": "Gitlab",
+        "years": 1,
+        "color": "#FCA326"
+      }
+    ],
+    "experiences": [
+      { 
+        "start_date": "2022-04-02",
+        "end_date": null,
+        "bussiness_name": "Poliglota",
+        "logo": "/poliglota-logo.png",
+        "location_id": "chile",
+        "job_title": "Frontend Developer",
+        "seniority": "Senior",
+        "description": "Participé en el desarrollo de una plataforma e-learning completa, diseñada para gestionar horarios, cursos disponibles y medir el progreso de alumnos y coaches. Utilizamos Vue 3 junto con Vite, Typescript, Pinia, Bootstrap y SCSS para construir una interfaz moderna y altamente funcional. Además, desempeñé un papel clave en la creación del sistema de diseño en colaboración con el equipo UI/UX, asegurando una experiencia de usuario cohesiva y atractiva en toda la plataforma.",
+        "skills": ["Vue", "Typescript", "Vite", "Bootstrap", "SASS", "Jenkins"]
+      },
+      { 
+        "start_date": "2020-10-02",
+        "end_date": "2022-03-30",
+        "bussiness_name": "Myper Software",
+        "logo": "/myper.png",
+        "location_id": "peru",
+        "job_title": "Frontend Developer",
+        "seniority": "Senior",
+        "description": "Dirigí el desarrollo de un proyecto de Seguridad y Salud Ocupacional (SSOMA), utilizando Vue 2 como framework principal para el frontend. Integré Vuetify como librería de estilos y Axios para consumir REST APIs, garantizando una interfaz de usuario intuitiva y una comunicación eficiente con el backend. Además, lideré la implementación de nuevas tecnologías en proyectos posteriores, adoptando Vue 3 con Vite, Pinia, y Typescript. En estos proyectos, también aproveché Quasar como librería de componentes, lo que permitió una mayor eficiencia en el desarrollo y una mejor experiencia para el usuario final. Trabajé en estrecha colaboración con el equipo de diseño y los stakeholders para garantizar que los requisitos del negocio se cumplieran de manera efectiva, y contribuí al crecimiento y evolución continua de nuestras prácticas de desarrollo frontend.",
+        "skills": ["Vue", "Typescript", "Vite", "Vuetify", "Quasar", "SASS","Pinia", "Jenkins"]
+      },
+      { 
+        "start_date": "2020-03-05",
+        "end_date": "2020-09-30",
+        "bussiness_name": "IDSI E.I.R.L",
+        "logo": "/idsi.png",
+        "location_id": "peru",
+        "job_title": "Frontend Developer",
+        "seniority": "semisenior",
+        "description": "Colaboré en el desarrollo de un e-commerce, contribuyendo en la maquetación y el desarrollo frontend utilizando Vue 2 como framework principal. Implementé librerías como Vuex, Vue Router y Axios para gestionar el estado de la aplicación y las solicitudes HTTP de manera eficiente. Además, aproveché mixins, custom components y templates para optimizar la arquitectura del proyecto, mejorando tanto el rendimiento como la mantenibilidad del código. Superé desafíos técnicos al implementar características clave, como la gestión de carritos de compra en tiempo real. Trabajé estrechamente con el equipo backend para integrar las funcionalidades de forma fluida y cumplir con los plazos establecidos.",
+        "skills": ["Vue", "Javascript", "Vuex", "Vuetify", "SASS", "Socket.io"]
+      },
+      {
+        "start_date": "2019-06-03",
+        "end_date": "2019-12-31",
+        "bussiness_name": "EMAPE",
+        "logo": "/emape.png",
+        "location_id": "peru",
+        "job_title": "Fullstack Web Developer",
+        "seniority": "semisenior",
+        "description": "Me dediqué al soporte y mantenimiento de sistemas web, desarrollo de CMS con Codeigniter 3 en PHP, capacitación de usuarios en el uso de aplicativos, modelado de bases de datos en MySQL, MariaDB y PostgreSQL, y desarrollo de landing pages con Vue 2 para mejorar la presencia online de la organización.",
+        "skills": ["PHP","Laravel", "Codeigniter", "PostgreSQL", "Javascript", "Vue", "HTML", "CSS"]
+      },
+      {
+        "start_date": "2018-07-01",
+        "end_date": "2019-05-30",
+        "bussiness_name": "VIPUSA",
+        "logo": "/vipusa.png",
+        "location_id": "peru",
+        "job_title": "Fullstack Web Developer",
+        "seniority": "junior",
+        "description": "Mi experiencia incluye el desarrollo de proyectos informáticos como sistemas logísticos y sistemas de gestión de combustible, utilizando PHP con Codeigniter 3 y la arquitectura MVC. Además, he realizado el modelado de bases de datos en MySQL y desarrollado el frontend con Vue 2 a través de CDN.",
+        "skills": ["PHP", "Codeigniter", "Javascript", "Vue","MySQL" ,"HTML", "CSS"]
+      }
+    ],
+    "projects": [
+      {
+        "title": "Chatbot Delivery",
+        "description": "Este proyecto se enfoca en optimizar el proceso de delivery para un restaurante al integrarse con el bot de messenger proporcionado por Facebook. Los clientes pueden realizar sus pedidos de manera intuitiva desde la aplicación de messenger, siguiendo un flujo de conversación fácil de usar. Además, para la gestión eficiente de los pedidos, desarrollamos una Progressive Web Application (PWA) utilizando Nuxt.js. Esta PWA no solo registra los pedidos realizados a través del bot de messenger, sino que también ofrece una experiencia fluida y receptiva para la administración de pedidos desde cualquier dispositivo.",
+        "img": "/projects/chatbot-delivery.jpg",
+        "skills": ["Nuxt", "Javascript", "Socket.io", "Webhooks"]
+      },
+      {
+        "title": "E-commerce App",
+        "description": "Participé en un proyecto de e-commerce que se distingue por su enfoque en la separación entre la parte de cliente y la parte de negocio. En la sección destinada al negocio, desarrollamos una interfaz robusta que permite la gestión completa de productos y servicios, además de facilitar la creación de landing pages personalizadas para cada producto. Por otro lado, en la sección para clientes, creamos una experiencia de usuario fluida que permite una búsqueda fácil y una visualización clara de los productos y servicios disponibles. Esta estructura modular asegura una experiencia óptima tanto para los administradores como para los clientes.",
+        "img": "/projects/ecommerce-app.png",
+        "skills": ["Nuxt", "Javascript", "Socket.io", "Webhooks"]
+      }
+    ],
+    "locations": [
+      {
+        "id": "chile",
+        "name": "Chile",
+        "flag_img": "/flags/chile.svg"
+      },
+      {
+        "id": "peru",
+        "name": "Perú",
+        "flag_img": "/flags/chile.svg"
+      }
+    ],
+    "cv": "https://drive.google.com/file/d/1K3An0ohqJb3uPcEoBVKAzWAvzOPjABEq/view?usp=drive_link",
+    "contact_link": "https://wa.link/wr0k63",
+    "profile_img": "/avatar.jpeg",
+    "github": "https://github.com/juanvizarro/",
+    "linkedin": "https://linkedin.com/in/juanvizarro",
+    "email": "jvizarro.ramos@gmail.com"
+  }
