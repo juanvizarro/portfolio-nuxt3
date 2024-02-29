@@ -16,7 +16,10 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/eslint-module',
     './modules/auto-import-eslint.ts',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-time',
+    '@hypernym/nuxt-anime',
+    'nuxt-aos'
   ],
   i18n: {
     vueI18n: './i18n.config.ts'
@@ -29,5 +32,22 @@ export default defineNuxtConfig({
   },
   ui: {
     icons: ['ph']
+  },
+  runtimeConfig: {
+    public: {
+      MIXPANEL_TOKEN: process.env.NUXT_MIXPANEL_TOKEN
+    }
+  },
+  anime: {
+    composables: true
+  },
+  aos: {
+    // startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    once: true
   }
+  // plugins: [
+  //   '~/plugins/'
+  // ]
 })
