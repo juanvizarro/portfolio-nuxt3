@@ -3,6 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  ssr: false,
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/i18n',
