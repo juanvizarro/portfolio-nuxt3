@@ -131,18 +131,33 @@
         </div>
         <div class="flex gap-4 pt-10 md:pt-14">
           <div v-mixpanel="{ id: 1, name: 'contact-linkedin', payload: {} }">
-            <UButton size="xl" :to="data.linkedin" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-left" data-aos-duration="1500">
-              <UIcon name="i-ph-linkedin-logo" class="contact-btn--icon" />
-              <span>Linkedin</span>
+            <UButton 
+              size="xl"
+              :to="data.linkedin"
+              target="_blank"
+              variant="link"
+              color="gray"
+              class="contact-btn"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <UIcon name="i-ph-linkedin-logo" class="contact-btn--icon" />
+                <span>Linkedin</span>
+              </div>
             </UButton>
           </div>
           <UButton size="xl" :to="data.github" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-zoom-in" data-aos-duration="1500">
-            <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
-            <span>Github</span>
+            <div class="flex flex-col items-center gap-2">
+              <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
+              <span>Github</span>
+            </div>
           </UButton>
           <UButton size="xl" :to="`mailto:${data.email}`" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-right" data-aos-duration="1500">
-            <UIcon name="i-ph-envelope" class="contact-btn--icon" />
-            <span>Email</span>
+            <div class="flex flex-col items-center gap-2">
+              <UIcon name="i-ph-envelope" class="contact-btn--icon" />
+              <span>Email</span>
+            </div>
           </UButton>
         </div>
       </section>
@@ -246,7 +261,7 @@
     }
   }
   .contact-btn{
-    @apply transition-all dark:hover:text-white flex flex-col gap-2;
+    @apply transition-all dark:hover:text-white;
     &--icon{
       @apply size-[32px] md:size-[40px] hover:shadow-md shadow-shamrock-400;
     }
