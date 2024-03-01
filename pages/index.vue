@@ -51,24 +51,25 @@
       <section id="about_me">
         <div class="flex flex-col items-center justify-between w-full gap-5 sm:flex-row">
           <div class="md:max-w-[400px] lg:max-w-[600px] left text-center sm:text-start">
-          <h3 class="font-semibold uppercase text-shamrock-400">
+          <h3 class="font-semibold uppercase text-shamrock-400" data-aos="fade-left" data-aos-duration="1500">
             {{ translationData.speciality }}
           </h3>
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text pt-4 pb-4 bg-gradient-to-r from-sky-400 to-[#92FE9D]">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text pt-4 pb-4 bg-gradient-to-r from-sky-400 to-[#92FE9D]" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="250">
             {{ data.full_name }}
           </h1>
-          <p class="mt-2 leading-7 text-gray-800 dark:text-gray-300">{{ translationData.description }}</p>
+          <p class="mt-2 leading-7 text-gray-800 dark:text-gray-300" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">{{ translationData.description }}</p>
           <div
             class="grid grid-cols-2 py-3 md:py-6"
-            data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="750"
           >
             <div class="with-border indicator">
               <span class="indicator--value">+<span id="indicator-webDev">5</span></span>
               <span class="indicator--description">{{ t('years_of') }} <br> {{ t('web_development') }}</span>
             </div>
             <div class="indicator">
-              <span class="indicator--value">+10</span>
+              <span class="indicator--value">+<span id="indicator-projects">10</span></span>
               <span class="indicator--description">{{ t('fulfilled') }}<br> {{ t('projects') }} </span>
             </div>
             <!-- <div class="indicator">
@@ -76,23 +77,18 @@
               <span class="indicator--descrip`tion">{{ t('web_development') }}</span>
             </div> -->
           </div>
-          <div
-          class="mt-3 avatar md:hidden"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-once="true"
-        >
-          <NuxtImg
+          <Avatar 
+            class="mt-3 md:hidden"
             :src="data.profile_img"
-            :placeholder="img('/avatar.jpeg', { blur: 5, f: 'png', h: 300})"
-            loading="lazy"
-            class="rounded-full hover:scale-105"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
           />
-        </div>
           <div
             class="flex justify-center gap-3 pt-8 md:justify-start"
-            data-aos="fade-right"
-            data-aos-duration="2000"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="1250"
           >
             <UButton
               :label="t('contact_me')"
@@ -126,55 +122,74 @@
             </UButton>
           </div>
         </div>
-        <div
-          class="hidden avatar duration-400 md:block"
+        <Avatar
+          :src="data.profile_img"
+          class="hidden md:block"
           data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-once="true"
-        >
-          <NuxtImg
-            :src="data.profile_img"
-            :placeholder="img('/avatar.jpeg', { blur: 5, f: 'png', h: 300})"
-            loading="lazy"
-            class="rounded-full hover:scale-105"
-          />
-        </div>
+          data-aos-duration="1500"
+        />
         </div>
         <div class="flex gap-4 pt-10 md:pt-14">
           <div v-mixpanel="{ id: 1, name: 'contact-linkedin', payload: {} }">
-            <UButton size="xl" :to="data.linkedin" target="_blank" variant="link" color="gray" class="contact-btn">
+            <UButton size="xl" :to="data.linkedin" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-left" data-aos-duration="1500">
               <UIcon name="i-ph-linkedin-logo" class="contact-btn--icon" />
               <span>Linkedin</span>
             </UButton>
           </div>
-          <UButton size="xl" :to="data.github" target="_blank" variant="link" color="gray" class="contact-btn">
+          <UButton size="xl" :to="data.github" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-zoom-in" data-aos-duration="1500">
             <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
             <span>Github</span>
           </UButton>
-          <UButton size="xl" :to="`mailto:${data.email}`" target="_blank" variant="link" color="gray" class="contact-btn">
+          <UButton size="xl" :to="`mailto:${data.email}`" target="_blank" variant="link" color="gray" class="contact-btn" data-aos="fade-right" data-aos-duration="1500">
             <UIcon name="i-ph-envelope" class="contact-btn--icon" />
             <span>Email</span>
           </UButton>
         </div>
       </section>
     <!-- </ClientOnly> -->
-    <section id="skills" data-aos="fade-up"
-            data-aos-duration="2000">
-      <SectionTitle :title="t('my_skills')" class="pb-5" />
+    <section id="skills">
+      <SectionTitle 
+        :title="t('my_skills')"
+        class="pb-5"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
       <div class="flex flex-col gap-3">
-        <div v-for="skillType in skillsData" :key="`skill_${skillType.type}`">
-          <h2 class="flex items-center gap-2 pb-2 text-lg">
+        <div 
+          v-for="skillType in skillsData"
+          :key="`skill_${skillType.type}`"
+        >
+          <h2
+            class="flex items-center gap-2 pb-2 text-lg"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <UIcon :name="skillType.iconName"/> {{ skillType.title}}
           </h2>
           <div class="grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7">
-            <Skill v-for="skill in skillType.skills" :key="`skill_${skill.title}`" :skill="skill" />
+            <Skill 
+              v-for="skill in skillType.skills"
+              :key="`skill_${skill.title}`"
+              :skill="skill"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            />
           </div>
         </div>
       </div>
     </section>
     <section id="experience">
-      <SectionTitle :title="t('my_experience')" class="pb-6" />
-      <ol class="relative border-gray-300 border-s-2">
+      <SectionTitle 
+        :title="t('my_experience')"
+        class="pb-6"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <ol 
+        class="relative border-gray-300 border-s-2"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <Experience
           v-for="(experience, i) in experienceData"
           :key="`experience_${i}`"
@@ -184,9 +199,20 @@
       </ol>
     </section>
     <section id="projects" class="pb-6">
-      <SectionTitle :title="t('my_projects')" class="pb-6" />
+      <SectionTitle 
+        :title="t('my_projects')"
+        class="pb-6"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
       <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
-        <Project v-for="(project,i) in projectsData" :key="`project_${i}`" :project="project" />
+        <Project 
+          v-for="(project,i) in projectsData"
+          :key="`project_${i}`"
+          :project="project"
+          data-aos="zoom-out"
+          data-aos-duration="1500"
+        />
       </div>
     </section>
     <!-- <ClientOnly>
@@ -200,20 +226,12 @@
 </template>
 <style  lang="scss" scoped>
 .main-page{
+  @apply flex flex-col gap-8;
   section{
     scroll-margin: 100px;
   }
   #about_me{
     @apply flex flex-col items-center justify-center h-auto md:min-h-[42rem];
-  }
-  .avatar{
-    @apply ring-2 hover:ring-4 ring-shamrock-400 p-1 hover:p-0 transition-[padding,box-shadow] overflow-hidden w-[200px] md:w-[250px] lg:w-[300px] mx-auto rounded-full;
-  }
-  @apply flex flex-col gap-8;
-  @media screen and (max-width: 640px) {
-    .avatar{
-      @apply size-[150px];
-    }
   }
   .indicator{
     &.with-border{
