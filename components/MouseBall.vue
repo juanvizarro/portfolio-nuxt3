@@ -10,7 +10,7 @@ const { x, y } = useMouse()
   />
 </template>
 <style lang="scss" scoped>
-.mouse-ball{
+.mouse-ball {
   @apply size-[200px] absolute -translate-x-1/2 -translate-y-1/2 bg-gray-400 rounded-full pointer-events-none dark:bg-shark-400;
   filter: blur(148px);
 }

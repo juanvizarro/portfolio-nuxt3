@@ -1,7 +1,7 @@
 <script setup lang="ts">
-    const props = defineProps<{
-        title: string
-    }>()
+const props = defineProps<{
+  title: string;
+}>()
 </script>
 <template>
   <div class="flex items-center justify-center w-full gap-4 section-title">

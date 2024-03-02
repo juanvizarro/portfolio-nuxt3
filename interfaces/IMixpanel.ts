@@ -1,5 +1,5 @@
 export interface IMixpanelDirective {
-    id: number
-    name: string
-    payload: object
+  id: number;
+  name: string;
+  payload: object;
 }

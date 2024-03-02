@@ -2,12 +2,12 @@
   "[typescript]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    },
+    }
   },
   "[vue]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    },
+    }
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -16,12 +16,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "vue",
-    "vue-html"
-  ],
+  "eslint.validate": ["javascript", "typescript", "vue", "vue-html"],
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -33,10 +28,5 @@
     ["ui:\\s*{([^)]*)\\s*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["/\\*ui\\*/\\s*{([^;]*)}", ":\\s*[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "ngClass",
-    "ui"
-  ]
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "ui"]
 }

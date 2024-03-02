@@ -3,48 +3,51 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es2021: true
+    es2021: true,
   },
-  parser: 'vue-eslint-parser',
+  parser: "vue-eslint-parser",
   parserOptions: {
-    sourceType: 'module',
+    sourceType: "module",
     ecmaVersion: 12,
-    parser: '@typescript-eslint/parser'
+    parser: "@typescript-eslint/parser",
   },
   extends: [
-    'plugin:vue/vue3-recommended',
-    '@nuxtjs/eslint-config-typescript',
+    "plugin:vue/vue3-recommended",
+    "@nuxtjs/eslint-config-typescript",
     // 'plugin:nuxt/recommended',
-    'eslint:recommended',
-    './.nuxt/.eslint.globals.json'
+    "eslint:recommended",
+    "./.nuxt/.eslint.globals.json",
   ],
   plugins: [],
   rules: {},
   overrides: [
     {
-      files: ['*.vue'],
+      files: ["*.vue"],
       rules: {
-        indent: 'off',
-        'vue/multi-word-component-names': 'off',
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn',
-        'space-in-parens': 'off',
-        'computed-property-spacing': 'off',
-        'vue/component-tags-order': [
-          'error',
+        indent: "off",
+        "vue/multi-word-component-names": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "space-in-parens": "off",
+        "computed-property-spacing": "off",
+        "vue/component-tags-order": [
+          "error",
           {
-            order: [['script', 'template'], 'style', 'i18n']
-          }
-        ],
-        'vue/max-attributes-per-line': ['error', {
-          singleline: {
-            max: 1
+            order: [["script", "template"], "style", "i18n"],
           },
-          multiline: {
-            max: 1
-          }
-        }]
-      }
-    }
-  ]
-}
+        ],
+        "vue/max-attributes-per-line": [
+          "error",
+          {
+            singleline: {
+              max: 1,
+            },
+            multiline: {
+              max: 1,
+            },
+          },
+        ],
+      },
+    },
+  ],
+};

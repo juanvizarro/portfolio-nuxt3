@@ -23,7 +23,9 @@ const autoImportEslint = defineNuxtModule({
       const imports = await context.getImports()
       imports.forEach((autoImport) => {
         const list = autoImports[autoImport.from] || []
-        const name = autoImport.as ? autoImport.as!.toString() : autoImport.name.toString()
+        const name = autoImport.as
+          ? autoImport.as!.toString()
+          : autoImport.name.toString()
         autoImports[autoImport.from] = list.concat([name])
       })
     })
@@ -31,7 +33,9 @@ const autoImportEslint = defineNuxtModule({
     nuxt.hook('imports:extend', (composableImport: Import[]) => {
       // console.log('imports:extend', composableImport)
       autoImports.composables = composableImport.map((autoImport) => {
-        if (autoImport.as) { return autoImport.as!.toString() }
+        if (autoImport.as) {
+          return autoImport.as!.toString()
+        }
         return autoImport.name.toString()
       })
     })

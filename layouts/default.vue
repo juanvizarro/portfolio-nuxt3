@@ -1,6 +1,4 @@
-<script setup lang="ts">
-  
-</script>
+<script setup lang="ts"></script>
 <template>
   <main class="dark:bg-shark-950 dark:text-white mx-auto w-full min-h-[100dvh]">
     <BaseHeader />

@@ -1,5 +1,5 @@
 interface State {
-    counter: number
+  counter: number;
 }
 
 export const useUserStore = defineStore('user', {

@@ -1,1 +1,1 @@
-export type RouteKeys = 'about_me'|'skills'|'experience'
+export type RouteKeys = 'about_me' | 'skills' | 'experience';
