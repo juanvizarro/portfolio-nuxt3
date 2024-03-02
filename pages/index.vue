@@ -46,7 +46,6 @@
 </script>
 <template>
   <div class="relative main-page">
-    <!-- <MouseBall /> -->
     <!-- <ClientOnly> -->
       <section id="about_me">
         <div class="flex flex-col items-center justify-between w-full gap-5 sm:flex-row">
@@ -241,7 +240,7 @@
 </template>
 <style  lang="scss" scoped>
 .main-page{
-  @apply flex flex-col gap-8;
+  @apply flex flex-col gap-8 overflow-hidden;
   section{
     scroll-margin: 100px;
   }

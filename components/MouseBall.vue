@@ -5,7 +5,7 @@ const { x, y } = useMouse()
 </script>
 <template>
   <div
-    class=" mouse-ball"
+    class="mouse-ball"
     :style="{ left: `${x}px`, top: `${y}px` }"
   />
 </template>
