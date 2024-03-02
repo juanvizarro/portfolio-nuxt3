@@ -4,10 +4,6 @@ import { UButton } from '#build/components';
   import type { RouteKeys } from '@/interfaces/IRoute'
 
   const HEADER_HEIGHT = 120
-
-  const props = defineProps<{
-    activeOption: RouteKeys
-  }>()
   
   const { t, locale } = useI18n({
     useScope: 'local'
