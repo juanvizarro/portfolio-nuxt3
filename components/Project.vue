@@ -11,6 +11,7 @@ const props = defineProps<{
     <NuxtImg
       :src="project.img"
       class="img"
+      :alt="`Project - ${project.title}`"
     />
     <span class="text-lg font-semibold">{{ project.title }}</span>
     <span class="dark:text-gray-400 line-clamp-6">{{

@@ -38,6 +38,7 @@ const duration = computed(() => {
       <NuxtImg
         v-if="experience.logo"
         :src="experience.logo"
+        :alt="`Experience - ${experience.job_title}`"
       />
     </span>
     <h3 class="text-lg font-semibold">
@@ -48,11 +49,6 @@ const duration = computed(() => {
       <h2 class="text-md">
         {{ experience.bussiness_name }}
       </h2>
-      <!-- <UIcon name="i-ph-dot-duotone" />
-            <div class="flex justify-center gap-2">
-                <span class="text-md">{{ location?.name }}</span>
-                <NuxtImg width="20px" :src="location?.flag_img" />
-            </div> -->
     </div>
     <div
       class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-300"

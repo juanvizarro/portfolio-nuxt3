@@ -11,6 +11,7 @@ const img = useImage()
       :src="src"
       :placeholder="img(src, { blur: 5, f: 'png', h: 300 })"
       loading="lazy"
+      alt="Juan Avatar"
       class="transition rounded-full hover:scale-105"
     />
   </div>

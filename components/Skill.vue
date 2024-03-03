@@ -37,13 +37,13 @@ const onMouseLeave = (e: MouseEvent) => {
     }"
   >
     <div class="flex items-center justify-center w-10 h-10">
-      <NuxtImg loading="lazy" :src="props.skill.logo" />
+      <NuxtImg loading="lazy" :src="skill.logo" :alt="`Skill - ${skill.title}`" />
     </div>
     <span class="font-bold" :style="{ color: props.skill.color }">{{
-      props.skill.title
+      skill.title
     }}</span>
     <span class="text-sm">
-      {{ props.skill.years }} {{ t("year", props.skill.years) }}</span
+      {{ skill.years }} {{ t("year", skill.years) }}</span
     >
   </div>
 </template>
