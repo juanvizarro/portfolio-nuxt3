@@ -110,14 +110,14 @@ function setScrollListener() {
       <div class="flex gap-2">
         <ThemeBtn />
         <div
-          class="block cursor-pointer md:hidden"
+          class="block cursor-pointer md:hidden size-10"
           @click="openMenuMobile = !openMenuMobile"
         >
           <svg
             v-if="!openMenuMobile"
             width="44"
-            height="40"
-            viewBox="0 0 44 40"
+            height="44"
+            viewBox="0 0 44 44"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             class=""
@@ -145,7 +145,7 @@ function setScrollListener() {
           <UIcon
             v-else
             name="i-ph-x-bold"
-            class="w-[44px] h-[40px] text-shamrock-400"
+            class="size-10 text-shamrock-400"
           />
         </div>
         <!-- <UChip
@@ -173,12 +173,14 @@ function setScrollListener() {
     <div
       v-if="openMenuMobile"
       class="flex flex-col w-full p-4 menu-mobile md:hidden"
+      data-aos="fade-up"
+      data-aos-duration="800"
     >
       <div class="flex flex-col gap-1">
         <div
-          v-for="option in currentOptions"
+          v-for="(option,i) in currentOptions"
           :key="`option-mobile_${option.id}`"
-          class="py-3 text-center rounded-sm cursor-pointer bg-shark-900"
+          class="py-3 text-center rounded-md cursor-pointer dark:bg-shark-900 bg-shark-400"
           :class="{ active: option.id === activeOptn }"
           @click="setOptionMobile(option.id)"
         >
