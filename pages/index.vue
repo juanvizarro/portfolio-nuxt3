@@ -47,6 +47,13 @@ const skillsData = computed(() => {
 });
 const experienceData = computed(() => data.experiences);
 const projectsData = computed(() => data.projects);
+
+useHead({
+  title: 'Juan Vizarro Ramos',
+  meta: [
+    { name: 'description', content: 'My landing page description'}
+  ]
+})
 </script>
 <template>
   <div class="relative main-page">
@@ -264,7 +271,7 @@ const projectsData = computed(() => data.projects);
         data-aos="fade-up"
         data-aos-duration="1500"
       />
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-2">
         <Project
           v-for="(project, i) in projectsData"
           :key="`project_${i}`"
