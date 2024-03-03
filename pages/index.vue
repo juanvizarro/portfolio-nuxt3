@@ -137,6 +137,7 @@ useHead({
               :to="data.contact_link"
               size="xl"
               type="link"
+              aria-label="contact-me"
             >
               <template #trailing>
                 <UIcon name="i-ph-whatsapp-logo" class="size-[1.3em]" />
@@ -149,6 +150,7 @@ useHead({
               target="_blank"
               :to="data.cv"
               size="xl"
+              aria-label="download-cv"
             >
               <template #trailing>
                 <UIcon name="i-ph-download-simple" class="size-[1.3em]" />
@@ -174,6 +176,7 @@ useHead({
             class="contact-btn"
             data-aos="fade-left"
             data-aos-duration="1500"
+            aria-label="linkedin"
           >
             <div class="flex flex-col items-center gap-2">
               <UIcon name="i-ph-linkedin-logo" class="contact-btn--icon" />
@@ -190,6 +193,7 @@ useHead({
           class="contact-btn"
           data-aos="fade-zoom-in"
           data-aos-duration="1500"
+          aria-label="github"
         >
           <div class="flex flex-col items-center gap-2">
             <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
@@ -205,6 +209,7 @@ useHead({
           class="contact-btn"
           data-aos="fade-right"
           data-aos-duration="1500"
+          aria-label="email"
         >
           <div class="flex flex-col items-center gap-2">
             <UIcon name="i-ph-envelope" class="contact-btn--icon" />

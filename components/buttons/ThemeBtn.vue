@@ -15,6 +15,7 @@ const isDark = computed({
     color="gray"
     variant="ghost"
     @click="isDark = !isDark"
+    aria-label="mode"
   >
     <PhosphorIconMoon v-if="isDark" />
     <PhosphorIconSun v-else />

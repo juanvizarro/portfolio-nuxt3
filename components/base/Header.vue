@@ -1,4 +1,3 @@
-import { UButton } from '#build/components';
 <script setup lang="ts">
 import ThemeBtn from "@/components/buttons/ThemeBtn.vue";
 import type { RouteKeys } from "@/interfaces/IRoute";
