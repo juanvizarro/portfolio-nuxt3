@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import ThemeBtn from "@/components/buttons/ThemeBtn.vue";
+import { NAV_ABOUTME_EVENT, NAV_EXPERIENCE_EVENT, NAV_PROJECTS_EVENT, NAV_SKILLS_EVENT } from '@/mixpanel.events';
 import type { RouteKeys } from "@/interfaces/IRoute";
+import { IMixpanelDirective } from "~/interfaces/IMixpanel";
 
 const HEADER_HEIGHT = 120;
 
@@ -8,22 +10,21 @@ const { t, locale } = useI18n({
   useScope: "local",
 });
 
-const options = <
-  {
-    [key: string]: { id: RouteKeys; value: string }[];
-  }
->{
+type Options = {
+  [key: string]: { id: RouteKeys; value: string, mixpanelEvent: IMixpanelDirective }[];
+}
+const options = <Options>{
   en: [
-    { id: "about_me", value: "About me" },
-    { id: "skills", value: "Skills" },
-    { id: "experience", value: "Experience" },
-    { id: "projects", value: "Projects" },
+    { id: "about_me", value: "About me", mixpanelEvent: NAV_ABOUTME_EVENT },
+    { id: "skills", value: "Skills", mixpanelEvent: NAV_SKILLS_EVENT },
+    { id: "experience", value: "Experience", mixpanelEvent: NAV_EXPERIENCE_EVENT },
+    { id: "projects", value: "Projects", mixpanelEvent: NAV_PROJECTS_EVENT },
   ],
   es: [
-    { id: "about_me", value: "Sobre mi" },
-    { id: "skills", value: "Habilidades" },
-    { id: "experience", value: "Experiencia" },
-    { id: "projects", value: "Proyectos" },
+    { id: "about_me", value: "Sobre mi", mixpanelEvent: NAV_ABOUTME_EVENT },
+    { id: "skills", value: "Habilidades", mixpanelEvent: NAV_SKILLS_EVENT },
+    { id: "experience", value: "Experiencia", mixpanelEvent: NAV_EXPERIENCE_EVENT },
+    { id: "projects", value: "Proyectos", mixpanelEvent: NAV_PROJECTS_EVENT },
   ],
 };
 const currentOptions = computed(() => options[locale.value]);
@@ -91,6 +92,7 @@ function setScrollListener() {
             }"
             class="flex items-center cursor-pointer"
             @click="setOption(option.id)"
+            v-mixpanel="option.mixpanelEvent"
           >
             <UIcon
               class="text-xs"
@@ -182,6 +184,7 @@ function setScrollListener() {
           class="py-3 text-center rounded-md cursor-pointer dark:bg-shark-900 bg-shark-400"
           :class="{ active: option.id === activeOptn }"
           @click="setOptionMobile(option.id)"
+          v-mixpanel="option.mixpanelEvent"
         >
           <UIcon
             class="text-xs"
