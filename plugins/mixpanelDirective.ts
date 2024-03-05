@@ -7,7 +7,7 @@ interface MixpanelDirectiveBinding {
 
 const trackMixpanel = (data: IMixpanelDirective) => {
   const { id, name, payload } = data
-  mixpanel.identify(`${id}`)
+  mixpanel.identify(`${id ?? mixpanel.get_distinct_id()}`)
   mixpanel.track(name, payload)
   console.log(`===== Event tracked: ${name} =====`)
 }
