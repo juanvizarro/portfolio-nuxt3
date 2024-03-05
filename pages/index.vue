@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import portfolioData from "@/data/portfolio-data.json";
-// import { useAnime } from '#anime'
+import mixpanel from 'mixpanel-browser'
 import type { IPortfolioData } from "@/interfaces/IPortfolioData";
 
-const img = useImage();
 const { t, locale } = useI18n({ useScope: "local" });
 
 const data = <IPortfolioData>portfolioData;
@@ -48,12 +47,7 @@ const skillsData = computed(() => {
 const experienceData = computed(() => data.experiences);
 const projectsData = computed(() => data.projects);
 
-useHead({
-  title: 'Juan Vizarro Ramos',
-  meta: [
-    { name: 'description', content: 'My landing page description'}
-  ]
-})
+if(!import.meta.dev) mixpanel.track_pageview()
 </script>
 <template>
   <div class="relative main-page">
@@ -166,7 +160,7 @@ useHead({
         />
       </div>
       <div class="flex gap-4 pt-10 md:pt-14">
-        <div v-mixpanel="{ id: 1, name: 'contact-linkedin', payload: {} }">
+        <div v-mixpanel="{ name: 'contact-linkedin', payload: {} }">
           <UButton
             size="xl"
             :to="data.linkedin"
