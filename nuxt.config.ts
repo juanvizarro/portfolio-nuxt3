@@ -57,12 +57,12 @@ export default defineNuxtConfig({
     animatedClassName: 'aos-animate',
     once: true
   },
-  site: {
-    url: 'https://juanvizarro.vercel.app',
-    name: 'Juan Vizarro Ramos - Frontend Developer',
-    description: 'Descubre mi portafolio de desarrollo frontend donde muestro mis habilidades y proyectos. Explora mis trabajos en diseño web, desarrollo de aplicaciones y más.',
-    ogImage: false
-  },
+  // site: {
+  //   url: 'https://juanvizarro.vercel.app',
+  //   name: 'Juan Vizarro Ramos - Frontend Developer',
+  //   description: 'Descubre mi portafolio de desarrollo frontend donde muestro mis habilidades y proyectos. Explora mis trabajos en diseño web, desarrollo de aplicaciones y más.',
+  //   ogImage: false
+  // },
   // plugins: [
   //   '~/plugins/'
   // ]
