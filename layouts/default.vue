@@ -3,7 +3,7 @@
   <main class="dark:bg-shark-950 dark:text-white mx-auto w-full min-h-[100dvh]">
     <BaseHeader />
     <UContainer class="pt-24 pb-4 relative overflow-hidden">
-      <MouseBall />
+      <MouseBall class="hidden md:block" />
       <slot />
     </UContainer>
     <BaseFooter />
