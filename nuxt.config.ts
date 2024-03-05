@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     'nuxt-time',
     '@hypernym/nuxt-anime',
     'nuxt-aos',
-    'nuxt-purgecss'
   ],
   app: {
     head: {
