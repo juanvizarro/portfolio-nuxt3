@@ -21,13 +21,14 @@ export default defineNuxtConfig({
     'nuxt-time',
     '@hypernym/nuxt-anime',
     'nuxt-aos',
+    '@nuxtjs/seo'
   ],
   app: {
     head: {
       htmlAttrs: {
         lang: 'es'
       },
-      title: 'Juan Vizarro Ramos'
+      // title: 'Juan Vizarro Ramos'
     }
   },
   i18n: {
@@ -55,7 +56,13 @@ export default defineNuxtConfig({
     initClassName: 'aos-init',
     animatedClassName: 'aos-animate',
     once: true
-  }
+  },
+  site: {
+    url: 'https://juanvizarro.vercel.app',
+    name: 'Juan Vizarro Ramos - Frontend Developer',
+    description: 'Descubre mi portafolio de desarrollo frontend donde muestro mis habilidades y proyectos. Explora mis trabajos en diseño web, desarrollo de aplicaciones y más.',
+    ogImage: false
+  },
   // plugins: [
   //   '~/plugins/'
   // ]
