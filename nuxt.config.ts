@@ -20,8 +20,17 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-time',
     '@hypernym/nuxt-anime',
-    'nuxt-aos'
+    'nuxt-aos',
+    'nuxt-purgecss'
   ],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'es'
+      },
+      title: 'Juan Vizarro Ramos'
+    }
+  },
   i18n: {
     vueI18n: './i18n.config.ts'
   },
