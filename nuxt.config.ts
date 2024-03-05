@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     'nuxt-time',
     '@hypernym/nuxt-anime',
     'nuxt-aos',
-    '@nuxtjs/seo'
+    // '@nuxtjs/seo'
   ],
   app: {
     head: {
