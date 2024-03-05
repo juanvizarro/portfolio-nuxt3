@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import portfolioData from "@/data/portfolio-data.json";
 import mixpanel from 'mixpanel-browser'
+import { CONTACT_EMAIL_EVENT, CONTACT_GITHUB_EVENT, CONTACT_LINKEDIN_EVENT } from '@/mixpanel.events'
 import type { IPortfolioData } from "@/interfaces/IPortfolioData";
 
 const { t, locale } = useI18n({ useScope: "local" });
@@ -160,7 +161,7 @@ if(!import.meta.dev) mixpanel.track_pageview()
         />
       </div>
       <div class="flex gap-4 pt-10 md:pt-14">
-        <div v-mixpanel="{ name: 'contact-linkedin', payload: {} }">
+        <div v-mixpanel="CONTACT_LINKEDIN_EVENT">
           <UButton
             size="xl"
             :to="data.linkedin"
@@ -178,38 +179,42 @@ if(!import.meta.dev) mixpanel.track_pageview()
             </div>
           </UButton>
         </div>
-        <UButton
-          size="xl"
-          :to="data.github"
-          target="_blank"
-          variant="link"
-          color="gray"
-          class="contact-btn"
-          data-aos="fade-zoom-in"
-          data-aos-duration="1500"
-          aria-label="github"
-        >
-          <div class="flex flex-col items-center gap-2">
-            <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
-            <span>Github</span>
-          </div>
-        </UButton>
-        <UButton
-          size="xl"
-          :to="`mailto:${data.email}`"
-          target="_blank"
-          variant="link"
-          color="gray"
-          class="contact-btn"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          aria-label="email"
-        >
-          <div class="flex flex-col items-center gap-2">
-            <UIcon name="i-ph-envelope" class="contact-btn--icon" />
-            <span>Email</span>
-          </div>
-        </UButton>
+        <div v-mixpanel="CONTACT_GITHUB_EVENT">
+          <UButton
+            size="xl"
+            :to="data.github"
+            target="_blank"
+            variant="link"
+            color="gray"
+            class="contact-btn"
+            data-aos="fade-zoom-in"
+            data-aos-duration="1500"
+            aria-label="github"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <UIcon name="i-ph-github-logo" class="contact-btn--icon" />
+              <span>Github</span>
+            </div>
+          </UButton>
+        </div>
+        <div v-mixpanel="CONTACT_EMAIL_EVENT">
+          <UButton
+            size="xl"
+            :to="`mailto:${data.email}`"
+            target="_blank"
+            variant="link"
+            color="gray"
+            class="contact-btn"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            aria-label="email"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <UIcon name="i-ph-envelope" class="contact-btn--icon" />
+              <span>Email</span>
+            </div>
+          </UButton>
+        </div>
       </div>
     </section>
     <!-- </ClientOnly> -->
