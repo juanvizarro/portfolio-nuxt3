@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const userStore = useUserStore()
 const { counter, double } = storeToRefs(userStore)
-// useSeoMeta({
-//   title: 'Juan Vizarro Ramos',
-//   ogTitle: 'Juan Vizarro Ramos',
-//   description:''
-// })
 </script>
 <template>
   <NuxtLayout>
