@@ -285,13 +285,6 @@ if(!import.meta.dev) mixpanel.track_pageview()
         />
       </div>
     </section>
-    <!-- <ClientOnly>
-      <div>
-        <h2 class="text-gray dark:text-primary">
-          texto en client
-        </h2>
-      </div>
-    </ClientOnly> -->
   </div>
 </template>
 <style lang="scss" scoped>
