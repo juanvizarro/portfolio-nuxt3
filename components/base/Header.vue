@@ -2,7 +2,7 @@
 import ThemeBtn from "@/components/buttons/ThemeBtn.vue";
 import { NAV_ABOUTME_EVENT, NAV_EXPERIENCE_EVENT, NAV_PROJECTS_EVENT, NAV_SKILLS_EVENT } from '@/mixpanel.events';
 import type { RouteKeys } from "@/interfaces/IRoute";
-import { IMixpanelDirective } from "~/interfaces/IMixpanel";
+import type { IMixpanelDirective } from "@/interfaces/IMixpanel"
 
 const HEADER_HEIGHT = 120;
 
