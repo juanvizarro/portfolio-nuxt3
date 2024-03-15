@@ -48,7 +48,9 @@ const skillsData = computed(() => {
 const experienceData = computed(() => data.experiences);
 const projectsData = computed(() => data.projects);
 
-if(!import.meta.dev) mixpanel.track_pageview()
+onMounted(() => {
+  if(!import.meta.dev) mixpanel.track_pageview()
+})
 </script>
 <template>
   <div class="relative main-page">
